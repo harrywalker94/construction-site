@@ -643,17 +643,23 @@ html {
     color: #a7a7a7;
 }
 
-.social-list a {
-    margin: 0 2rem;
+.footer-list a {
+    color: inherit;
 }
 
-.social-list i {
+.footer-list p {
+    font-family: "Baloo Da 2", serif;
+    font-size: 2rem;
+    color: #a7a7a7;
+}
+
+.footer-list i {
     font-size: 2rem;
     color: #a7a7a7;
     transition: all .2s ease-in-out;
 }
 
-.social-list i:hover {
+.footer-list i:hover {
     color: #59a2cf;
 }
 
@@ -675,8 +681,7 @@ html {
 
 .map {
     height: 200px;
-    width: 200px;
-    border: solid 2px var(--d-grey);
+    width: 100%;
 }
 
 @media (max-width: 1500px) {
@@ -775,13 +780,16 @@ html {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .banner h1 {
         font-size: 4rem;
         line-height: 5rem;
     }
     .banner p {
         font-size: 2rem;
+    }
+    .footer-list {
+        margin-top: 2rem;
     }
     .map {
         height: 100px;
@@ -805,7 +813,7 @@ html {
         width: 30rem;
     }
     .footer {
-        height: 35rem;
+        height: 50rem;
     }
 }
 
@@ -916,4 +924,47 @@ html {
     color: #eee;
     border-radius: 0.3rem;
     box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+}
+
+.footer-content li {
+    padding: 1.2rem 0;
+    list-style: none;
+    transition: all 0.25s ease;
+}
+
+.footer-content li:hover {
+    transform: translateY(-4px);
+}
+
+.footer-content li a {
+    text-decoration: none;
+    color: #a7a7a7;
+    font-size: 1rem;
+    transition: all 0.1s ease;
+}
+
+.footer-content li a:hover {
+    color: black;
+}
+
+.footer-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem;
+    background: #8f9491;
+}
+
+.footer-banner p {
+    margin-top: 1rem;
+    color: rgba(94, 89, 85, 0.4);
+}
+
+.footer-underline {
+    width: 80%;
+    height: 1px;
+    background: rgba(94, 89, 85, 0.4);
+    margin: 0 auto;
 }
